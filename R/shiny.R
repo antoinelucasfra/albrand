@@ -22,5 +22,9 @@ bs_theme_brand <- function(...) {
   if (!requireNamespace("bslib", quietly = TRUE)) {
     stop("Install bslib >= 1.3 to use bs_theme_brand().", call. = FALSE)
   }
-  bslib::bs_theme(brand = albrand_brand_path(), ...)
+  # ponytail: canonical brand.yml uses Quarto light/dark nesting the R
+  # brand.yml package can't parse yet; flat light-mode subset shipped alongside.
+  # Switch to albrand_brand_path() when the R brand.yml lands mode support.
+  bslib::bs_theme(brand = system.file("quarto", "brand-shiny.yml",
+                                     package = "albrand"), ...)
 }
