@@ -1,0 +1,25 @@
+Package: albrand
+Type: Package
+Title: Antoine Lucas' Brand for Quarto Documents and Shiny Apps
+Version: 0.1.0
+Authors@R:
+    person("Antoine", "Lucas", email = "antoine.lucas.fra@gmail.com",
+           role = c("aut", "cre"))
+Description: Bundles the 'al-brand' Quarto brand extension (sky-blue
+    identity, Space Grotesk / DM Sans / JetBrains Mono, paired light and
+    dark modes) so any R workflow can produce branded outputs. Render
+    branded HTML reports with one function call, copy the extension into
+    Quarto projects, or point bslib at the included 'brand.yml' to theme
+    Shiny apps identically.
+License: MIT + file LICENSE
+URL: https://github.com/antoinelucasfra/quarto-al-brand/
+BugReports: https://github.com/antoinelucasfra/albrand/issues
+Encoding: UTF-8
+Depends:
+    R (>= 4.1)
+Suggests:
+    bslib (>= 1.3),
+    quarto,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
