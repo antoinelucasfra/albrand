@@ -1,0 +1,43 @@
+# Flat-mode brand subset for bslib / brand.yml R package.
+# The canonical brand.yml uses Quarto's light/dark mode nesting, which the
+# R ecosystem does not parse yet; this file carries the light identity so
+# bs_theme_brand() works everywhere.
+meta:
+  name:
+    short: al-brand
+    full: Antoine Lucas Brand
+  link:
+    home: https://antoinelucasfra.github.io/quarto-al-brand/
+
+color:
+  palette:
+    sky:          "#38BDF8"
+    sky-light:    "#7DD3FC"
+    sky-deep:     "#0284C7"
+    sky-dim:      "#0EA5E9"
+    white-warm:   "#FAFAF8"
+    ink-light:    "#1C2128"
+    muted-light:  "#57606A"
+    teal:         "#2DD4BF"
+    danger:       "#F85149"
+  foreground: ink-light
+  background: white-warm
+  primary: sky-deep
+  secondary: muted-light
+  success: teal
+  info: sky
+  warning: "#D97706"
+  danger: danger
+
+typography:
+  fonts:
+    - family: Space Grotesk
+      source: google
+    - family: DM Sans
+      source: google
+    - family: JetBrains Mono
+      source: google
+  headings:
+    family: Space Grotesk
+  monospace:
+    family: JetBrains Mono

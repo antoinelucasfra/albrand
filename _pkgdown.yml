@@ -1,0 +1,19 @@
+url: https://antoinelucasfra.github.io/albrand/
+
+template:
+  bootstrap: 5
+  bootswatch: cosmo
+  bslib:
+    primary: "#0284C7"        # sky-deep
+    info: "#38BDF8"           # sky
+    success: "#2DD4BF"        # teal
+    danger: "#F85149"
+    bg: "#FAFAF8"             # warm off-white
+    fg: "#1C2128"             # ink-light
+
+development:
+  mode: auto
+
+authors:
+  Antoine Lucas:
+    href: https://antoinelucasfra.github.io/

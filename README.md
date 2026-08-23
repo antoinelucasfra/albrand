@@ -2,6 +2,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/antoinelucasfra/albrand/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/antoinelucasfra/albrand/actions/workflows/R-CMD-check.yaml)
+[![pkgdown](https://img.shields.io/badge/pkgdown-site-informational)](https://antoinelucasfra.github.io/albrand/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-informational)](LICENSE)
 <!-- badges: end -->
 
@@ -11,8 +12,10 @@ extension (sky-blue identity, Space Grotesk / DM Sans / JetBrains Mono, paired
 light + dark modes) so **any R workflow can produce branded outputs**:
 one-function report rendering, Quarto project scaffolding, and Shiny theming.
 
-Pattern inspired by Mickaël Canouil's approach of shipping a Quarto extension
-inside an R package to deliver branded reports from R and Shiny workflows.
+Pattern inspired by [Mickaël Canouil (@mcanouil)](https://github.com/mcanouil)
+and his work shipping Quarto extensions inside R packages to deliver branded
+reports from R and Shiny workflows — see <https://github.com/mcanouil> and
+<https://mickael.canouil.fr/>.
 
 ## Installation
 
@@ -48,7 +51,7 @@ format:
 
 ## Theme Shiny apps identically
 
-The same `brand.yml` drives bslib (>= 1.3):
+The bundled `brand.yml` drives bslib (>= 1.3):
 
 ```r
 library(shiny)
@@ -56,6 +59,12 @@ fluidPage(
   theme = albrand::bs_theme_brand(preset = "cosmo"),
   ...
 )
+```
+
+Try the bundled demo app without installing anything:
+
+```r
+shiny::runGitHub("antoinelucasfra/albrand", subdir = "inst/shiny-demo")
 ```
 
 Site, reports, and apps — one identity.

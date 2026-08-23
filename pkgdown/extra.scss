@@ -1,0 +1,16 @@
+/* al-brand typography for the pkgdown site */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --bs-body-font-family: "DM Sans", system-ui, sans-serif;
+  --bs-font-monospace: "JetBrains Mono", ui-monospace, monospace;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page-header, .navbar-brand {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+}
+
+code, kbd, pre, samp, .sourceCode {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
