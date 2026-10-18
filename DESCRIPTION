@@ -20,6 +20,7 @@ Depends:
     R (>= 4.1)
 Suggests:
     bslib,
+    brand.yml,
     quarto,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
