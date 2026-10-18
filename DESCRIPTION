@@ -2,7 +2,7 @@ Package: albrand
 Type: Package
 Config/Bundled/quarto-al-brand: v1.0.0
 Title: Antoine Lucas' Brand for Quarto Documents and Shiny Apps
-Version: 0.1.0
+Version: 0.1.1
 Authors@R:
     person("Antoine", "Lucas", email = "antoine.lucas.fra@gmail.com",
            role = c("aut", "cre"))
